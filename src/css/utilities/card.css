@@ -1,0 +1,20 @@
+.u-card {
+    border-radius: var(--radius-md);
+}
+
+.u-card-lg {
+    border-radius: var(--radius-lg);
+    height: 20rem;
+}
+
+.u-card--light {
+    background-color: var(--clr-neutral-100);
+}
+
+.u-card--primary {
+    background-color: var(--clr-primary);
+}
+
+.u-card--secondary {
+    background-color: var(--clr-neutral-900);
+}

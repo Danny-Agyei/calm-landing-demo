@@ -1,0 +1,276 @@
+/* inter-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/inter-v18-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/inter-v18-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/inter-v18-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Neue-Montreal-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/neue-montreal-bold.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* neue-montreal-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/neue-montreal-medium.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* neue-montreal-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/neue-montreal-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Typography */
+    --ff-primary: "Inter", Arial, Helvetica, sans-serif;
+    --ff-secondary: "Neue Montreal", Arial, Helvetica, sans-serif;
+
+    --fs-800: 5.5rem;
+    --fs-700: 2.8rem;
+    --fs-600: 2.5rem;
+    --fs-500: 2rem;
+    --fs-400: 1.8rem;
+    --fs-300: 1.5rem;
+    --fs-200: 1.4rem;
+    --fs-100: 1.3rem;
+    --fs-base: 0.625rem;
+
+    /* Text size  */
+    --fs-heading-primary: var(--fs-700);
+    --fs-heading-secondary: var(--fs-700);
+    --fs-heading-tertial: var(--fs-500);
+    --fs-body: var(--fs-300);
+    --fs-body-sm: var(--fs-100);
+    --fs-body-lg: var(--fs-400);
+    --fs-section-title: var(var(--fs-500));
+
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
+
+    /* Spacing | Sizes  */
+    --size-40x: 16rem;
+    --size-35x: 14rem;
+    --size-30x: 12rem;
+    --size-25x: 10rem;
+    --size-20x: 8rem;
+    --size-16x: 6.4rem;
+    --size-12x: 4.8rem;
+    --size-10x: 4rem;
+    --size-8x: 3.2rem;
+    --size-6x: 2.4rem;
+    --size-5x: 2rem;
+    --size-4x: 1.6rem;
+    --size-3x: 1.2rem;
+    --size-2x: 0.8rem;
+    --size-1x: 0.4rem;
+
+    /* Border radius  */
+    --radius-pill: 99.9rem;
+    --radius-lg: var(--size-8x);
+    --radius-md: var(--size-5x);
+    --radius-sm: var(--size-2x);
+    --radius-xs: var(--size-1x);
+
+    /* Layout  */
+    --section-inner-padding: var(--size-12x);
+    --container-width: calc(100% - var(--size-10x));
+
+    /* Color  */
+    --blue-dark: hsl(217, 50%, 27%);
+    --blue-light: hsl(197, 100%, 40%);
+    --yellow: hsl(46, 83%, 51%);
+    --orange: hsl(12, 88%, 59%);
+    --gray-dark: hsl(217, 10%, 25%);
+    --gray-light: hsl(220, 8%, 85%);
+    --black: hsl(0, 0%, 12%);
+    --white: hsl(0, 0%, 100%);
+
+    --clr-primary: var(--blue-dark);
+    --clr-primary-light: var(--blue-light);
+    --clr-secondary: var(--yellow);
+    --clr-neutral-900: var(--black);
+    --clr-neutral-700: var(--gray-dark);
+    --clr-neutral-500: var(--gray-light);
+    --clr-neutral-100: var(--white);
+
+    /* Transition */
+    --transition-1: 0.25s ease-in-out;
+    --transition-2: 0.3s ease-in-out;
+
+    /* Navigation  */
+    --nav-gap: var(--size-6x);
+    --nav-font-size: var(--fs-200);
+    --nav-color: hsla(0, 0%, 1%, 0.85);
+    --nav-link-color: var(--clr-neutral-100);
+
+    /* Footer  */
+    --footer-bg-color: var(--clr-neutral-900);
+    --footer-font-size: var(--fs-200);
+    --footer-link-color: var(--yellow);
+
+    /* Button  */
+    --button-font-size-sm: var(--fs-100);
+    --button-font-size-lg: var(--fs-400);
+    --button-font-weight: var(--fw-regular);
+    --button-padding-sm: var(--size-2x) var(--size-5x);
+    --button-padding-lg: var(--size-2x) var(--size-10x);
+    --button-border-radius: var(--radius-pill);
+    --button-color: var(--clr-primary);
+    --button-text-color: var(--clr-neutral-100);
+}
+
+@media screen and (min-width:46.75em) {
+    :root {
+        /* Text size  */
+        --fs-heading-primary: var(--fs-800);
+        --fs-heading-secondary: var(--fs-800);
+        --fs-heading-tertial: var(--fs-600);
+        --fs-body: var(--fs-500);
+        --fs-body-lg: var(--fs-500);
+        --fs-section-title: var(var(--fs-600));
+
+        /* Button  */
+        --button-font-size-sm: var(--fs-400);
+
+        /* Layout  */
+        --section-inner-padding: var(--size-20x);
+        --container-width: calc(100% - var(--size-20x));
+    }
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+ul,
+ol {
+    list-style: none;
+    line-height: 1;
+}
+
+
+html {
+    font-size: var(--fs-base);
+    font-family: var(--ff-primary);
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+a,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    color: var(--clr-neutral-900);
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    min-height: 100%;
+    background-color: var(--clr-neutral-100);
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    line-height: 1;
+}
+
+button {
+    background-color: transparent;
+}
+
+input {
+    width: 100%;
+}
+
+p {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,89 @@
+.site-header {
+    background-color: var(--clr-primary);
+    background-image: url('../../assets/images/header-bg-mobile.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site-header__container {
+    padding: var(--size-6x) var(--size-2x) 0;
+}
+
+.nav {
+    background-color: var(--nav-color);
+    border-radius: var(--radius-sm);
+    height: var(--size-16x);
+    padding-inline: var(--size-6x);
+}
+
+.nav__menu {
+    display: none;
+    position: fixed;
+    right: 0;
+}
+
+.nav__brand-image {
+    width: 20rem;
+}
+
+.nav__toggler {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    height: 27px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+
+.nav__hamburger {
+    background: var(--clr-secondary);
+    border-radius: var(--radius-xs);
+    display: block;
+    height: 0.3rem;
+    transition: background 0.25s;
+    width: 2.7rem;
+}
+
+.nav__hamburger::before,
+.nav__hamburger::after {
+    background: var(--clr-secondary);
+    border-radius: var(--radius-xs);
+    content: '';
+    display: block;
+    height: 0.3rem;
+    left: 0;
+    position: absolute;
+    transform: rotate(0deg);
+    transition-delay: 0.25s, 0s;
+    transition-duration: 0.25s, 0.25s;
+    width: 100%;
+}
+
+.nav__hamburger::before {
+    top: 0.3rem;
+    transition-property: top, transform;
+}
+
+.nav__hamburger::after {
+    bottom: 0.3rem;
+    transition-property: bottom, transform;
+}
+
+.nav.has-expanded .nav__hamburger {
+    background: none;
+}
+
+.nav.has-expanded .nav__hamburger::before {
+    top: 1.2rem;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.25s;
+}
+
+.nav.has-expanded .nav__hamburger::after {
+    bottom: 1.2rem;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.25s;
+}

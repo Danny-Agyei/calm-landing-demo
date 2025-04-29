@@ -1,0 +1,36 @@
+.u-heading-primary {
+    font-size: var(--fs-heading-primary);
+    line-height: 1.4;
+}
+
+.u-heading-primary,
+.u-heading-secondary {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-medium);
+    letter-spacing: 0.01em;
+}
+
+.u-heading-secondary {
+    font-size: var(--fs-heading-secondary);
+    font-weight: var(--fw-medium);
+    line-height: 1.24;
+    margin-block: var(--size-1x) var(--size-4x);
+}
+
+.u-heading-tertial {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-heading-tertial);
+    font-weight: var(--fw-bold);
+    line-height: 24px;
+}
+
+.u-section-title {
+    font-weight: var(--fw-medium);
+    color: var(--clr-primary-light);
+    font-size: var(--fs-section-title);
+}
+
+.u-text-lead {
+    font-size: var(--fs-body-lg);
+    color: var(--clr-primary-light);
+}
