@@ -2,3 +2,10 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+
+@media screen and (min-width:62em) {
+    .u-even-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

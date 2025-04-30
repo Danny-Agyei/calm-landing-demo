@@ -10,17 +10,36 @@
     padding: var(--size-6x) var(--size-2x) 0;
 }
 
+@media screen and (min-width:62em) {
+    .site-header {
+        min-height: 100vh;
+    }
+}
+
+/* Navbar  */
 .nav {
     background-color: var(--nav-color);
     border-radius: var(--radius-sm);
     height: var(--size-16x);
     padding-inline: var(--size-6x);
+    gap: var(--size-4x);
 }
 
 .nav__menu {
     display: none;
     position: fixed;
     right: 0;
+}
+
+
+.nav__link {
+    color: var(--nav-link-color);
+    font-size: var(--nav-font-size);
+    transition: opacity var(--transition-2);
+}
+
+.nav__link:hover {
+    opacity: 0.65;
 }
 
 .nav__brand-image {
@@ -86,4 +105,28 @@
     bottom: 1.2rem;
     transform: rotate(-45deg);
     transition-delay: 0s, 0.25s;
+}
+
+@media screen and (min-width:62em) {
+    .nav {
+        height: 8rem;
+        background-color: transparent;
+        justify-content: space-between;
+        padding-inline: 0;
+    }
+
+    .nav__brand-image {
+        width: 28rem;
+    }
+
+    .nav__menu {
+        display: flex;
+        justify-content: space-between;
+        position: inherit;
+        width: 60%;
+    }
+
+    .nav__toggler {
+        display: none;
+    }
 }

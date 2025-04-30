@@ -14,7 +14,8 @@
     font-size: var(--fs-heading-secondary);
     font-weight: var(--fw-medium);
     line-height: 1.24;
-    margin-block: var(--size-1x) var(--size-4x);
+    margin: var(--size-1x) auto var(--size-4x);
+    max-width: 20ch;
 }
 
 .u-heading-tertial {

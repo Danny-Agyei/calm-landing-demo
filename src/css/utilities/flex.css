@@ -1,6 +1,13 @@
 .u-flex-row,
-.u-flex-column {
+.u-flex-column,
+.u-flex-group {
     display: flex;
+}
+
+.u-flex-group {
+    gap: var(--size-3x);
+    line-height: 1.3;
+    align-items: center;
 }
 
 .u-flex-column {

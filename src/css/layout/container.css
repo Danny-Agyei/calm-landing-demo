@@ -1,4 +1,21 @@
 .l-container {
     max-width: var(--container-width);
     margin-inline: auto;
+
+
+    @media screen and (min-width:48em) {
+        --container-width: 70rem;
+    }
+
+    @media screen and (min-width:62em) {
+        --container-width: 94rem;
+    }
+
+    @media screen and (min-width:73.4375em) {
+        --container-width: 114.0rem;
+    }
+
+    @media screen and (min-width:80em) {
+        --container-width: 120rem;
+    }
 }

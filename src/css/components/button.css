@@ -40,3 +40,17 @@
     font-size: var(--button-font-size-lg);
     padding: var(--button-padding-lg);
 }
+
+.button {
+    @media screen and (min-width:62em) {
+        --button-font-size-sm: var(--fs-100);
+    }
+
+    @media screen and (min-width:73.4375em) {
+        --button-font-size-sm: var(--fs-400);
+
+        .button--sm {
+            padding-block: var(--size-4x);
+        }
+    }
+}

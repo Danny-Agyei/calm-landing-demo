@@ -1,0 +1,28 @@
+/* Footer  */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--clr-neutral-100);
+    text-align: center;
+}
+
+.footer__wrapper {
+    gap: var(--size-5x);
+    margin-inline: auto;
+    max-width: 30ch;
+    padding-block-end: var(--size-8x);
+}
+
+.footer__nav-menu {
+    gap: var(--size-4x);
+    margin-block: var(--size-6x);
+}
+
+.footer__nav-link {
+    color: var(--footer-link-color);
+    font-size: var(--footer-font-size);
+    transition: opacity var(--transition-2);
+}
+
+.footer__nav-link:hover {
+    opacity: 0.6;
+}
