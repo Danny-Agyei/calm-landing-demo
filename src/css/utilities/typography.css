@@ -26,12 +26,12 @@
 }
 
 .u-section-title {
-    font-weight: var(--fw-medium);
     color: var(--clr-primary-light);
+    font-weight: var(--fw-medium);
     font-size: var(--fs-section-title);
 }
 
 .u-text-lead {
-    font-size: var(--fs-body-lg);
     color: var(--clr-primary-light);
+    font-size: var(--fs-body-lg);
 }

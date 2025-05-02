@@ -1,0 +1,102 @@
+/* Hidden Truth  */
+.hidden-truth {
+    background-image: url('../../assets/images/hidden-truth-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    text-align: center;
+}
+
+.hidden-truth::before {
+    background-color: var(--clr-neutral-100);
+    content: '';
+    clip-path: xywh(0 0 100% 100% round 0 0 100% 100%);
+    height: 20rem;
+    left: 50%;
+    position: absolute;
+    top: -16%;
+    transform: translateX(-50%);
+    width: 110%;
+    z-index: 1;
+}
+
+.hidden-truth__wrapper {
+    padding: var(--size-30x) var(--size-2x) var(--size-12x);
+}
+
+.hidden-truth__heading {
+    color: var(--clr-neutral-100);
+}
+
+.hidden-truth__title {
+    color: var(--clr-neutral-100);
+}
+
+.hidden-truth__details-card {
+    background-color: hsla(197, 100%, 40%, 0.678);
+    color: var(--clr-neutral-100);
+    margin-block-start: var(--size-10x);
+    padding: var(--size-6x) var(--size-5x) var(--size-5x);
+}
+
+.hidden-truth__details-bottom-text {
+    font-weight: var(--fw-medium);
+}
+
+.hidden-truth__list {
+    gap: var(--size-4x);
+    margin-block-end: var(--size-6x);
+}
+
+.hidden-truth__item {
+    gap: var(--size-3x);
+    line-height: 1.2;
+    text-align: left;
+}
+
+@media screen and (min-width:62em) {
+    .hidden-truth::before {
+        height: 30rem;
+        top: -25%;
+    }
+
+    .hidden-truth__wrapper {
+        padding: var(--size-35x) var(--size-2x) var(--size-12x);
+    }
+
+    .hidden-truth__separator {
+        margin-inline: auto;
+        max-width: 70%;
+    }
+
+    .hidden-truth__details-card {
+        border-radius: var(--radius-lg);
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .hidden-truth__list {
+        gap: var(--size-6x);
+        margin-block-end: var(--size-10x);
+    }
+}
+
+@media screen and (min-width:73.4375em) {
+    .hidden-truth__wrapper {
+        padding: var(--size-40x) var(--size-2x) var(--size-12x);
+    }
+
+    .hidden-truth__heading {
+        max-width: 25ch;
+    }
+
+    .hidden-truth::before {
+        height: 32rem;
+        top: -22%;
+    }
+
+    .hidden-truth__details-card {
+        padding: var(--size-16x);
+    }
+}

@@ -26,3 +26,18 @@
 .footer__nav-link:hover {
     opacity: 0.6;
 }
+
+@media screen and (min-width:62em) {
+    .footer__wrapper {
+        max-width: 100%;
+    }
+
+    .footer__brand {
+        width: 35rem;
+    }
+
+    .footer__nav-menu {
+        flex-direction: row;
+        gap: var(--size-16x);
+    }
+}

@@ -1,0 +1,144 @@
+/* Hero  */
+.hero__wrapper {
+    padding-block-start: var(--size-16x);
+    position: relative;
+    z-index: 2;
+}
+
+.hero__content {
+    color: var(--clr-neutral-100);
+}
+
+.hero__heading {
+    color: var(--clr-neutral-100);
+}
+
+.hero__button {
+    bottom: var(--size-8x);
+    left: 0;
+    margin-inline: auto;
+    max-width: 30rem;
+    position: absolute;
+    padding-inline: var(--size-10x);
+    right: 0;
+    z-index: 2;
+}
+
+.hero__image-group {
+    min-height: 48rem;
+    position: relative;
+}
+
+.hero__badges {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4x);
+    min-width: 25rem;
+    padding-block-start: var(--size-30x);
+    position: absolute;
+    right: 10rem;
+}
+
+.hero__badge--star {
+    transform: translateX(180%);
+}
+
+.hero__badge--massage {
+    transform: translateY(-1rem) translateX(80%);
+}
+
+.hero__badge--bulb {
+    transform: translateX(50%);
+}
+
+.hero__image {
+    bottom: 0;
+    max-width: 30rem;
+    position: absolute;
+    right: 0;
+    transform: translateX(12%);
+}
+
+@media screen and (min-width: 48em) {
+    .hero__button {
+        max-width: fit-content;
+    }
+
+    .hero__badges {
+        min-width: 25rem;
+        padding-block-start: var(--size-20x);
+        right: 25rem;
+    }
+
+    .hero__badge {
+        width: 9rem;
+    }
+
+    .hero__badge--star {
+        transform: translateX(120%);
+    }
+
+    .hero__badge--massage {
+        transform: translateY(-1.5rem) translateX(20%);
+    }
+
+    .hero__badge--bulb {
+        transform: translateX(-10%);
+    }
+
+    .hero__image {
+        max-width: 40rem;
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (min-width:62em) {
+    .hero__wrapper {
+        height: 100%;
+        padding-block: var(--size-30x);
+        position: relative;
+        width: 100%;
+    }
+
+    .hero__layout-flow {
+        grid-template-columns: 1.2fr 1fr;
+        gap: var(--size-16x);
+    }
+
+    .hero__content {
+        gap: var(--size-6x);
+    }
+
+    .hero__button {
+        position: unset;
+        margin-inline: 0;
+    }
+
+    .hero__image-group {
+        bottom: 0;
+        position: absolute;
+        right: -2%;
+    }
+
+    .hero__image {
+        position: relative;
+    }
+
+    .hero__badges {
+        padding-block-start: var(--size-40x);
+        right: 22rem;
+    }
+}
+
+@media screen and (min-width:73.4375em) {
+    .hero__wrapper {
+        padding-block: 20rem;
+    }
+
+    .hero__image-group {
+        transform: scale(1.3);
+        bottom: 6rem;
+        right: 2rem;
+    }
+}

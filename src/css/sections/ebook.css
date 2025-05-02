@@ -1,0 +1,96 @@
+/* Ebook  */
+.ebook__wrapper {
+    gap: var(--size-10x);
+    margin-block-end: var(--size-8x);
+    position: relative;
+}
+
+.ebook__image {
+    grid-row: 2;
+}
+
+.ebook__content-header {
+    margin-block-end: var(--size-6x);
+    padding-inline: var(--size-5x);
+    text-align: center;
+}
+
+.ebook__text {
+    margin-block-end: var(--size-6x);
+}
+
+.ebook__benefits {
+    gap: var(--size-4x);
+}
+
+.ebook__benefits-item strong {
+    color: #000;
+    font-weight: var(--fw-bold);
+}
+
+.ebook__button {
+    bottom: -1.5rem;
+    left: 0;
+    margin-inline: auto;
+    max-width: 28rem;
+    position: absolute;
+    right: 0;
+}
+
+
+@media screen and (min-width:62em) {
+    .ebook {
+        position: relative;
+    }
+
+    .ebook__wrapper {
+        align-items: center;
+        padding-block-end: var(--size-12x);
+    }
+
+    .ebook::after {
+        background-color: var(--clr-primary-light);
+        bottom: -6.4rem;
+        content: "";
+        height: var(--size-20x);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .ebook__content-header {
+        padding-inline: 0;
+        text-align: left;
+    }
+
+    .ebook__image {
+        grid-row: 1;
+        transform: scale(1.2);
+    }
+
+    .ebook__button {
+        margin: var(--size-8x) 0 0;
+        max-width: max-content;
+        position: unset;
+    }
+
+    .ebook__benefits {
+        padding-inline-start: var(--size-8x);
+    }
+}
+
+@media screen and (min-width:73.4375em) {
+    .ebook__wrapper {
+        padding-block-start: 0;
+    }
+
+    .ebook__heading {
+        font-size: 4.5rem;
+        max-width: 100%;
+    }
+
+    .ebook__image {
+        transform: scale(1.1);
+    }
+}

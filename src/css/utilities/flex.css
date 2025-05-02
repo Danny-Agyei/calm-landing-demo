@@ -5,9 +5,9 @@
 }
 
 .u-flex-group {
+    align-items: center;
     gap: var(--size-3x);
     line-height: 1.3;
-    align-items: center;
 }
 
 .u-flex-column {

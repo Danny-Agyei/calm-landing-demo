@@ -4,46 +4,68 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .site-header__container {
     padding: var(--size-6x) var(--size-2x) 0;
 }
 
-@media screen and (min-width:62em) {
-    .site-header {
-        min-height: 100vh;
-    }
+.site-header__container::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 /* Navbar  */
 .nav {
     background-color: var(--nav-color);
     border-radius: var(--radius-sm);
+    gap: var(--size-4x);
     height: var(--size-16x);
     padding-inline: var(--size-6x);
-    gap: var(--size-4x);
 }
 
 .nav__menu {
-    display: none;
+    align-items: center;
+    background-color: var(--clr-neutral-900);
+    display: flex;
+    gap: var(--size-10x);
+    justify-content: center;
+    left: 100%;
+    min-height: 100vh;
     position: fixed;
-    right: 0;
+    top: 0;
+    transition: 0.6s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 3;
 }
 
+.nav.has-expanded .nav__menu {
+    left: 0;
+    visibility: visible;
+}
 
 .nav__link {
     color: var(--nav-link-color);
     font-size: var(--nav-font-size);
-    transition: opacity var(--transition-2);
+    transition: color var(--transition-2);
 }
 
 .nav__link:hover {
-    opacity: 0.65;
+    color: var(--clr-secondary);
 }
 
 .nav__brand-image {
+    position: relative;
     width: 20rem;
+    z-index: 4;
 }
 
 .nav__toggler {
@@ -55,6 +77,7 @@
     justify-content: center;
     padding: 0;
     position: relative;
+    z-index: 4;
 }
 
 .nav__hamburger {
@@ -109,10 +132,12 @@
 
 @media screen and (min-width:62em) {
     .nav {
-        height: 8rem;
         background-color: transparent;
-        justify-content: space-between;
+        height: 8rem;
+        margin-inline: auto;
         padding-inline: 0;
+        position: relative;
+        z-index: 2;
     }
 
     .nav__brand-image {
@@ -120,13 +145,25 @@
     }
 
     .nav__menu {
+        background-color: transparent;
         display: flex;
-        justify-content: space-between;
-        position: inherit;
-        width: 60%;
+        flex-direction: row;
+        justify-content: flex-end;
+        left: unset;
+        min-height: auto;
+        position: unset;
+        visibility: visible;
+        width: 80%;
     }
 
     .nav__toggler {
         display: none;
+    }
+}
+
+@media screen and (min-width:73.4375em) {
+    .nav__menu {
+        gap: var(--size-16x);
+        width: 70%;
     }
 }

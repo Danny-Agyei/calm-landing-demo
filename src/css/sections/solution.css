@@ -1,0 +1,104 @@
+/* Solution  */
+.solution {
+    background-color: var(--clr-neutral-500);
+    background-image:
+        url('../../assets/images/solution-bg-image-left.png'),
+        url('../../assets/images/solution-bg-image-right.png');
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    position: relative;
+    text-align: center;
+}
+
+.solution-hr-separator {
+    margin-block: var(--size-3x);
+}
+
+.solution__image {
+    grid-row: 2;
+}
+
+.solution__list {
+    gap: var(--size-12x);
+    margin-block-start: var(--size-10x);
+}
+
+.solution__item {
+    line-height: 1.4;
+    max-width: 40ch;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.solution__title {
+    color: var(--clr-primary-light);
+    margin-block: var(--size-4x) var(--size-1x);
+}
+
+.solution__icon {
+    width: 8.5rem;
+}
+
+@media screen and (min-width:62em) {
+    .solution {
+        margin-block-end: var(--size-30x);
+    }
+
+    .solution::after {
+        background-color: var(--clr-primary);
+        bottom: -6.4rem;
+        content: "";
+        height: var(--size-16x);
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .solution-hr-separator {
+        margin-inline: auto;
+        max-width: 80%;
+    }
+
+    .solution__details {
+        align-items: flex-end;
+    }
+
+    .solution__list {
+        gap: var(--size-8x);
+        padding-block-end: var(--size-10x);
+    }
+
+    .solution__item {
+        align-items: center;
+        flex-direction: row;
+        gap: var(--size-4x);
+        margin-inline: 0;
+        text-align: left;
+    }
+
+    .solution__icon {
+        width: 12rem;
+    }
+
+    .solution__image {
+        grid-row: 1;
+        grid-column: 1;
+        transform: translateY(-2rem) scale(1.1);
+    }
+}
+
+@media screen and (min-width:73.4375em) {
+    .solution__heading {
+        max-width: 23ch;
+    }
+
+    .solution__details {
+        padding-block-start: var(--size-10x);
+    }
+
+    .solution__list {
+        margin-block: 0;
+        padding-block: 0 var(--size-16x);
+    }
+}

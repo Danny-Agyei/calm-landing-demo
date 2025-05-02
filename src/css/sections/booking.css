@@ -1,0 +1,65 @@
+/* Book-Call  */
+.book-call {
+    background-image: url('/src/assets/images/book-call-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.book-call__content {
+    gap: var(--size-6x);
+}
+
+.book-call__content-header {
+    padding-inline: var(--size-5x);
+    text-align: center;
+}
+
+.book-call__benefits {
+    gap: var(--size-4x);
+    font-weight: var(--fw-bold);
+    max-width: 32ch;
+    padding-inline-start: var(--size-6x);
+}
+
+.book-call__button {
+    padding-block: var(--size-2x);
+    width: 100%;
+}
+
+.book-call__button .button__icon {
+    width: var(--size-8x);
+}
+
+.book-call__button--strategy {
+    margin-block-end: var(--size-3x);
+}
+
+@media screen and (min-width:62em) {
+    .book-call {
+        background-image: url('/src/assets/images/book-call-bg-desktop.png');
+        overflow: hidden;
+    }
+
+    .book-call__content {
+        padding-block-end: var(--size-10x);
+    }
+
+    .book-call__content-header {
+        padding: 0;
+        text-align: left;
+    }
+
+    .book-call__image-wrapper {
+        align-items: flex-end;
+        display: flex;
+    }
+
+    .book-call__image {
+        transform: translate(10%, -3.5rem) scale(1.14);
+    }
+
+    .book-call__button {
+        width: max-content;
+    }
+}

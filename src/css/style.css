@@ -11,5 +11,13 @@
 @import url("./components/button.css");
 @import url("./layout/container.css");
 @import url("./layout/header.css");
-@import url("./pages/home.css");
+@import url('./sections/hero.css');
+@import url('./sections/experiencing.css');
+@import url('./sections/truth.css');
+@import url('./sections/solution.css');
+@import url('./sections/about.css');
+@import url('./sections/services.css');
+@import url('./sections/ebook.css');
+@import url('./sections/booking.css');
+@import url('./sections/bulletin.css');
 @import url("./layout/footer.css");

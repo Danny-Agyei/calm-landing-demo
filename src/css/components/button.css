@@ -42,8 +42,14 @@
 }
 
 .button {
+
     @media screen and (min-width:62em) {
         --button-font-size-sm: var(--fs-100);
+
+        .button__icon {
+            height: auto;
+        }
+
     }
 
     @media screen and (min-width:73.4375em) {
