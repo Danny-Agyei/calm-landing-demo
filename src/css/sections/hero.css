@@ -118,7 +118,7 @@
     .hero__image-group {
         bottom: 0;
         position: absolute;
-        right: -2%;
+        right: -5%;
     }
 
     .hero__image {
@@ -133,12 +133,12 @@
 
 @media screen and (min-width:73.4375em) {
     .hero__wrapper {
-        padding-block: 20rem;
+        padding-block: 15rem 20rem;
     }
 
     .hero__image-group {
         transform: scale(1.3);
         bottom: 6rem;
-        right: 2rem;
+        right: -2%;
     }
 }

@@ -74,6 +74,7 @@
         flex-direction: row;
         gap: var(--size-4x);
         margin-inline: 0;
+        max-width: 100%;
         text-align: left;
     }
 
@@ -93,12 +94,12 @@
         max-width: 23ch;
     }
 
-    .solution__details {
-        padding-block-start: var(--size-10x);
-    }
-
     .solution__list {
         margin-block: 0;
         padding-block: 0 var(--size-16x);
+    }
+
+    .solution__image {
+        transform: translateY(2rem) scale(1);
     }
 }

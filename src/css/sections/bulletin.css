@@ -52,13 +52,12 @@
         column-gap: var(--size-16x);
         grid-template-rows: 15rem 1fr;
         grid-template-columns: 1fr 1.5fr;
-        padding-block: var(--section-inner-padding);
+        padding-block: var(--size-25x) var(--section-inner-padding);
         row-gap: var(--size-10x);
     }
 
     .bulletin__image-wrapper {
         grid-column: 1;
-        margin-block-start: var(--size-16x);
     }
 
     .bulletin__avatar {

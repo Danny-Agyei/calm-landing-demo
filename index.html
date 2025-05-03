@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calm Hustle</title>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon  -->
     <link
       rel="icon"
@@ -29,7 +29,7 @@
         <div class="site-header__container l-container">
           <nav
             class="nav u-flex-row u-flex-between u-flex-align-center"
-            data-oasis="fade-down"
+            data-aos="fade-down"
             id="js-nav-main"
             aria-label="Primary"
           >
@@ -62,7 +62,7 @@
             </button>
           </nav>
 
-          <section class="hero">
+          <section data-aos="fade-up" data-aos-duration="500" class="hero">
             <div class="hero__wrapper u-wrapper">
               <div class="hero__layout-flow u-even-column">
                 <div class="hero__content u-flow">
@@ -140,7 +140,7 @@
       <section class="experiencing">
         <div class="l-container u-wrapper">
           <div class="experiencing__header u-even-column">
-            <div class="experiencing__header-content">
+            <div data-aos="fade-left" class="experiencing__header-content">
               <p class="u-section-title">The Mind-Body Performance Gap</p>
               <h2 class="experiencing__header-heading u-heading-secondary">
                 Your Ambition Deserves Better Fuel
@@ -167,9 +167,12 @@
               class="experiencing__header-image u-width-100"
               height="385"
               width="356"
+              data-aos="fade-right"
             />
           </div>
-          <p class="experiencing__title">What you might be experiencing:</p>
+          <p data-aos="fade-in" class="experiencing__title">
+            What you might be experiencing:
+          </p>
           <div class="experiencing__types u-flex-column">
             <div class="experiencing__type u-even-column">
               <img
@@ -178,8 +181,9 @@
                 class="experiencing__type-image u-width-100"
                 height="212"
                 width="381"
+                data-aos="fade-right"
               />
-              <div class="experiencing__type-content">
+              <div class="experiencing__type-content" data-aos="fade-left">
                 <h3 class="experiencing__sub-heading u-heading-tertial">
                   Mentally
                 </h3>
@@ -198,8 +202,9 @@
                 class="experiencing__type-image u-width-100"
                 height="212"
                 width="381"
+                data-aos="fade-right"
               />
-              <div class="experiencing__type-content">
+              <div class="experiencing__type-content" data-aos="fade-left">
                 <h3 class="experiencing__sub-heading u-heading-tertial">
                   Physically
                 </h3>
@@ -218,8 +223,9 @@
                 class="experiencing__type-image u-width-100"
                 height="212"
                 width="381"
+                data-aos="fade-right"
               />
-              <div class="experiencing__type-content">
+              <div class="experiencing__type-content" data-aos="fade-left">
                 <h3 class="experiencing__sub-heading u-heading-tertial">
                   You've Tried
                 </h3>
@@ -236,13 +242,15 @@
       </section>
       <section class="hidden-truth">
         <div class="hidden-truth__wrapper l-container u-wrapper">
-          <p class="hidden-truth__title u-section-title">The Hidden Truth</p>
-          <h2 class="hidden-truth__heading u-heading-secondary">
-            Your Mind and Body Are Inseparable Performance Partners
-          </h2>
-          <hr class="hidden-truth__separator u-hr-separator" />
+          <div data-aos="fade-up">
+            <p class="hidden-truth__title u-section-title">The Hidden Truth</p>
+            <h2 class="hidden-truth__heading u-heading-secondary">
+              Your Mind and Body Are Inseparable Performance Partners
+            </h2>
+            <hr class="hidden-truth__separator u-hr-separator" />
+          </div>
           <div class="hidden-truth__details u-even-column">
-            <div class="hidden-truth__details-card u-card">
+            <div data-aos="fade-up" class="hidden-truth__details-card u-card">
               <ul class="hidden-truth__list u-flex-column">
                 <li class="hidden-truth__item u-flex-row">
                   <img
@@ -289,13 +297,15 @@
       </section>
       <section id="solution" class="solution">
         <div class="solution__wrapper l-container u-wrapper">
-          <p class="u-heading-tertial u-section-title">The Solution</p>
-          <h2 class="solution__heading u-heading-secondary">
-            Integrated Resilience Is a Skill. You Can Master It.
-          </h2>
-          <hr class="solution-hr-separator u-hr-separator" />
-          <p class="solution__text">What Makes Calm Hustle Different</p>
-          <div class="solution__details u-even-column">
+          <div data-aos="fade-up">
+            <p class="u-heading-tertial u-section-title">The Solution</p>
+            <h2 class="solution__heading u-heading-secondary">
+              Integrated Resilience Is a Skill. You Can Master It.
+            </h2>
+            <hr class="solution-hr-separator u-hr-separator" />
+            <p class="solution__text">What Makes Calm Hustle Different</p>
+          </div>
+          <div data-aos="fade-up" class="solution__details u-even-column">
             <img
               src="./src/assets/images/solution-image.png"
               alt="TOM HISSEY"
@@ -365,12 +375,11 @@
       <section id="about" class="about">
         <div class="l-container about__wrapper u-wrapper">
           <div class="about__bio u-even-column">
-            <div class="about__bio-col-1">
+            <div class="about__bio-col-1" data-aos="fade-right">
               <p class="about__title u-section-title">MEET TOM HISSEY</p>
               <h2 class="about__heading u-heading-secondary">
                 The Mind Behind Calm Hustle
               </h2>
-              <hr class="u-hr-separator" />
               <div class="about__quote u-card">
                 <img
                   src="/src/assets/images/about-quote-image.png"
@@ -395,7 +404,7 @@
                 </div>
               </div>
             </div>
-            <div class="about__bio-col-2 u-flex-column">
+            <div data-aos="fade-left" class="about__bio-col-2 u-flex-column">
               <p class="about__bio-text">
                 I'm not a wellness guru. I'm a former soldier, qualified
                 physiotherapist, property developer, and neuroscience enthusiast
@@ -419,7 +428,11 @@
               </p>
             </div>
           </div>
-          <div class="about__skills u-even-column">
+          <div
+            data-aos="fade-up"
+            class="about__skills u-even-column"
+            data-oasis="fade-up"
+          >
             <div class="about__skill u-flex-column u-flex-align-center">
               <img
                 src="/src/assets/images/about-icon-military.png"
@@ -487,7 +500,7 @@
           </div>
 
           <div class="about__info u-even-column">
-            <picture class="about__info-image-wrapper">
+            <picture data-aos="fade-right" class="about__info-image-wrapper">
               <source
                 srcset="/src/assets/images/about-image-desktop.png"
                 type="image/png"
@@ -506,7 +519,7 @@
                 width="336"
               />
             </picture>
-            <div class="about__info-content u-flex-column">
+            <div data-aos="fade-left" class="about__info-content u-flex-column">
               <p class="about__info-callout">
                 This isn't therapy. It's not generic wellness.
               </p>
@@ -529,14 +542,16 @@
       </section>
       <section id="services" class="services">
         <div class="services__wrapper l-container u-wrapper">
-          <p class="services__title u-section-title">
-            Your Integrated Performance System
-          </p>
-          <h2 class="services__heading u-heading-secondary">
-            High-Performance Stress Management for Real-World Results
-          </h2>
-          <hr class="services__separator u-hr-separator" />
-          <div class="services__catalogue u-flex-column">
+          <div data-aos="fade-up">
+            <p class="services__title u-section-title">
+              Your Integrated Performance System
+            </p>
+            <h2 class="services__heading u-heading-secondary">
+              High-Performance Stress Management for Real-World Results
+            </h2>
+            <hr class="services__separator u-hr-separator" />
+          </div>
+          <div class="services__catalogue u-flex-column" data-aos="fade-up">
             <article class="services__item u-card u-flow">
               <img
                 src="/src/assets/images/services-management-hp.png"
@@ -601,8 +616,9 @@
               class="ebook__image u-width-100"
               height="214"
               width="330"
+              data-aos="fade-right"
             />
-            <div class="ebook__content u-flex-column">
+            <div data-aos="fade-left" class="ebook__content u-flex-column">
               <div class="ebook__content-header">
                 <p class="ebook__title u-section-title">
                   Download the Free 10-Minute Stress Hacks Guide
@@ -687,7 +703,7 @@
       <section class="book-call">
         <div class="l-container">
           <div class="book-call__wrapper u-wrapper u-even-column">
-            <div class="book-call__content u-flex-column">
+            <div data-aos="fade-up" class="book-call__content u-flex-column">
               <div class="book-call__content-header">
                 <p class="book-call__title u-section-title">
                   Transform Your Performance Potential
@@ -776,7 +792,7 @@
                 </a>
               </div>
             </div>
-            <picture class="book-call__image-wrapper">
+            <picture data-aos="fade-left" class="book-call__image-wrapper">
               <source
                 srcset="./src/assets/images/book-call-desktop.png"
                 type="image/png"
@@ -800,7 +816,10 @@
       </section>
       <section id="bulletin" class="bulletin">
         <div class="l-container">
-          <div class="bulletin__wrapper u-even-column u-wrapper">
+          <div
+            data-aos="fade-up"
+            class="bulletin__wrapper u-even-column u-wrapper"
+          >
             <div class="bulletin__image-wrapper">
               <img
                 src="/src/assets/images/bulletin-image.png"
@@ -908,7 +927,7 @@
     <footer class="footer">
       <div class="l-container">
         <div
-          data-oasis="fade-up"
+          data-aos="fade-in"
           class="footer__wrapper u-wrapper u-flex-column u-flex-align-center"
         >
           <picture class="footer__logo-wrapper">
@@ -949,7 +968,7 @@
       </div>
     </footer>
     <!-- Js scripts  -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

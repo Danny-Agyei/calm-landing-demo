@@ -55,7 +55,7 @@
     }
 
     .services__item-description {
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
         padding-inline: var(--size-4x);
     }
 

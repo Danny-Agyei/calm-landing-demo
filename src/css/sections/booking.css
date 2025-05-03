@@ -56,7 +56,7 @@
     }
 
     .book-call__image {
-        transform: translate(10%, -3.5rem) scale(1.14);
+        transform: translate(10%, 0rem) scale(1.05);
     }
 
     .book-call__button {
