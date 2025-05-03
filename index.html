@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm Hustle</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Favicon  -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon-96x96-BPBEXaLi.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-BMD59SzD.svg" />
+    <link rel="shortcut icon" href="/assets/favicon-8HXRyIGf.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon-_ocpTWl_.png"
+    />
+    <link rel="manifest" href="/assets/site-DGWt2i2_.webmanifest" />
+    <script type="module" crossorigin src="/assets/index-DOzn1K4P.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bl9xwkfl.css">
+  </head>
+
+  <body>
+    <main>
+      <header class="site-header">
+        <div class="site-header__container l-container">
+          <nav
+            class="nav u-flex-row u-flex-between u-flex-align-center"
+            data-aos="fade-down"
+            id="js-nav-main"
+            aria-label="Primary"
+          >
+            <a href="/index.html" class="nav__brand">
+              <img
+                src="/assets/logo-CRRFBBeq.png"
+                alt="Calm Hustle Home"
+                class="nav__brand-image"
+                height="57"
+                width="237"
+              />
+            </a>
+            <ul class="nav__menu u-flex-column">
+              <li><a href="#solution" class="nav__link">Solution</a></li>
+              <li><a href="#about" class="nav__link">About</a></li>
+              <li><a href="#services" class="nav__link">Services</a></li>
+              <li><a href="#bulletin" class="nav__link">Bulletin</a></li>
+              <li>
+                <a href="#contact" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+            <button
+              id="js-nav-menu-toggler"
+              class="nav__toggler"
+              aria-label="Toggle Main Navigation"
+              aria-controls="nav-main"
+              aria-expanded="false"
+            >
+              <span class="nav__hamburger"></span>
+            </button>
+          </nav>
+
+          <section data-aos="fade-up" data-aos-duration="500" class="hero">
+            <div class="hero__wrapper u-wrapper">
+              <div class="hero__layout-flow u-even-column">
+                <div class="hero__content u-flow">
+                  <h1 class="hero__heading u-heading-primary">
+                    Military Resilience. Physiotherapy Expertise. Peak
+                    Performance.
+                  </h1>
+                  <hr class="u-hr-separator hero__separator" />
+                  <p class="hero__description">
+                    High-Performance Stress Management for achievers who refuse
+                    to compromise. You worked hard to get where you are, let us
+                    keep you there.
+                  </p>
+                  <a href="#book-call" class="hero__button button button--sm">
+                    <span class="button__text">
+                      Book Your Free 15-Min Performance Strategy Call
+                    </span>
+                    <span class="button__icon">
+                      <img
+                        src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='48'%20height='48'%20rx='24'%20fill='%23EAB818'/%3e%3cpath%20d='M17%2024H31'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2017L31%2024L24%2031'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                        alt=""
+                      />
+                    </span>
+                  </a>
+                </div>
+                <div class="hero__image-group">
+                  <div class="hero__badges">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      class="hero__badge hero__badge--star"
+                      height="72"
+                      width="72"
+                    />
+                    <img
+                      src="data:image/png;base64,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"
+                      alt=""
+                      class="hero__badge hero__badge--massage"
+                      height="72"
+                      width="72"
+                    />
+                    <img
+                      src="/assets/hero-icon-light-bulb-DQDMpgmg.png"
+                      alt=""
+                      class="hero__badge hero__badge--bulb"
+                      height="72"
+                      width="72"
+                    />
+                  </div>
+                  <picture>
+                    <source
+                      srcset="/assets/hero-image-desktop-BhsnvMTZ.png"
+                      type="image/png"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="/assets/hero-image-mobile-CI5H4Qkz.png"
+                      type="image/png"
+                      media="(max-width:768px)"
+                    />
+                    <img
+                      src="/assets/hero-image-mobile-CI5H4Qkz.png"
+                      alt="Analytics Dashboard"
+                      width="412"
+                      height="516"
+                      class="hero__image u-width-100"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <section class="experiencing">
+        <div class="l-container u-wrapper">
+          <div class="experiencing__header u-even-column">
+            <div data-aos="fade-left" class="experiencing__header-content">
+              <p class="u-section-title">The Mind-Body Performance Gap</p>
+              <h2 class="experiencing__header-heading u-heading-secondary">
+                Your Ambition Deserves Better Fuel
+              </h2>
+              <hr class="u-hr-separator experiencing__separator" />
+              <p class="experiencing__header-text">
+                <strong
+                  >You're Not Just Mentally Exhausted. Your Whole System Is
+                  Depleted.</strong
+                >
+              </p>
+              <p class="experiencing__header-text">
+                <strong>High-performers like you understand drive.</strong> But
+                pushing through stress isn't heroic — it's inefficient.
+              </p>
+              <p class="experiencing__header-text">
+                When your mind is racing and your body is tense, you're
+                operating at a fraction of your potential.
+              </p>
+            </div>
+            <img
+              src="/assets/experiencing-performance-gap-B6xrjUxc.png"
+              alt="The mind-body performance gap"
+              class="experiencing__header-image u-width-100"
+              height="385"
+              width="356"
+              data-aos="fade-right"
+            />
+          </div>
+          <p data-aos="fade-in" class="experiencing__title">
+            What you might be experiencing:
+          </p>
+          <div class="experiencing__types u-flex-column">
+            <div class="experiencing__type u-even-column">
+              <img
+                src="/assets/experiencing-mentally-BV1g80-P.png"
+                alt="Experiencing Mentally"
+                class="experiencing__type-image u-width-100"
+                height="212"
+                width="381"
+                data-aos="fade-right"
+              />
+              <div class="experiencing__type-content" data-aos="fade-left">
+                <h3 class="experiencing__sub-heading u-heading-tertial">
+                  Mentally
+                </h3>
+                <ul class="experiencing__type-details u-flow">
+                  <li>Constant overthinking or decision fatigue</li>
+                  <li>Inability to switch off, even after work</li>
+                  <li>Diminishing focus and increasing procrastination</li>
+                  <li>Easily irritated by little inconveniences</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experiencing__type u-even-column">
+              <img
+                src="/assets/experiencing-physically-CYfRxaom.png"
+                alt="Experiencing Mentally"
+                class="experiencing__type-image u-width-100"
+                height="212"
+                width="381"
+                data-aos="fade-right"
+              />
+              <div class="experiencing__type-content" data-aos="fade-left">
+                <h3 class="experiencing__sub-heading u-heading-tertial">
+                  Physically
+                </h3>
+                <ul class="experiencing__type-details u-flow">
+                  <li>Constant overthinking or decision fatigue</li>
+                  <li>Inability to switch off, even after work</li>
+                  <li>Diminishing focus and increasing procrastination</li>
+                  <li>Easily irritated by little inconveniences</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experiencing__type u-even-column">
+              <img
+                src="/assets/experiencing-tried-CV8Dy5kn.png"
+                alt="Experiencing Mentally"
+                class="experiencing__type-image u-width-100"
+                height="212"
+                width="381"
+                data-aos="fade-right"
+              />
+              <div class="experiencing__type-content" data-aos="fade-left">
+                <h3 class="experiencing__sub-heading u-heading-tertial">
+                  You've Tried
+                </h3>
+                <ul class="experiencing__type-details u-flow">
+                  <li>Constant overthinking or decision fatigue</li>
+                  <li>Inability to switch off, even after work</li>
+                  <li>Diminishing focus and increasing procrastination</li>
+                  <li>Easily irritated by little inconveniences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hidden-truth">
+        <div class="hidden-truth__wrapper l-container u-wrapper">
+          <div data-aos="fade-up">
+            <p class="hidden-truth__title u-section-title">The Hidden Truth</p>
+            <h2 class="hidden-truth__heading u-heading-secondary">
+              Your Mind and Body Are Inseparable Performance Partners
+            </h2>
+            <hr class="hidden-truth__separator u-hr-separator" />
+          </div>
+          <div class="hidden-truth__details u-even-column">
+            <div data-aos="fade-up" class="hidden-truth__details-card u-card">
+              <ul class="hidden-truth__list u-flex-column">
+                <li class="hidden-truth__item u-flex-row">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='60'%20height='52'%20viewBox='0%200%2060%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.4743%208.50461C43.3895%209.24644%2041.4664%2010.2561%2039.6402%2011.3277C39.4462%2011.4431%2038.6328%2012.0283%2038.525%2011.9747C34.377%207.29708%2027.2285%204.72954%2020.1876%207.54024C9.23042%2011.917%206.56384%2024.6682%209.53748%2033.0302C12.2364%2040.6174%2021.4374%2049.1031%2032.6478%2044.2812C42.4899%2040.0446%2045.6952%2028.4061%2043.3734%2020.5098C44.7309%2019.0262%2046.3308%2017.5466%2048.0924%2016.3309C48.4964%2016.0506%2049.0836%2015.6509%2049.5146%2015.416C49.6923%2015.317%2049.8647%2015.1893%2050.1071%2015.214C50.328%2015.8858%2050.6458%2016.5328%2050.8829%2017.2005C54.072%2026.0323%2052.332%2036.5415%2045.1511%2043.9845C34.5979%2054.9182%2016.9554%2054.572%206.80626%2043.5229C-2.20623%2033.7102%20-2.24933%2018.6553%206.56384%208.76013C16.0073%20-1.83561%2032.8202%20-3.22035%2043.9174%206.81078C44.1275%207.00036%2045.6036%208.38097%2045.4797%208.50461H45.4743Z'%20fill='white'/%3e%3cpath%20d='M45.4364%2016.643C40.3619%2020.7107%2036.9088%2026.1425%2033.1702%2030.9561C31.9904%2032.4727%2029.3885%2036.2767%2027.6377%2037.1298C25.262%2038.2919%2023.4089%2037.3894%2021.9221%2035.8893C20.2359%2034.1872%2018.4097%2031.7598%2017.1169%2029.8557C15.63%2027.6715%2012.1285%2022.2644%2015.3661%2020.3439C19.207%2018.0607%2022.9241%2022.2726%2024.5402%2024.4858C25.0843%2025.2276%2025.5583%2026.3362%2026.1132%2026.9832C26.1778%2027.0574%2026.1024%2027.1234%2026.3394%2027.0821C28.2249%2024.3415%2030.3797%2021.6586%2032.7069%2019.1199C35.0341%2016.5812%2037.5283%2014.1703%2040.8036%2012.2127C44.5961%209.94597%2053.0645%206.33988%2057.902%207.67928C59.5073%208.12438%2059.6582%209.25773%2058.2683%2010.0078C56.7599%2010.8238%2054.5351%2011.4626%2052.8705%2012.1962C50.1177%2013.4078%2047.6289%2014.8915%2045.4418%2016.6471L45.4364%2016.643Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="hidden-truth__icon"
+                    height="38"
+                    width="38"
+                  />
+                  <p>Burnout isn't a badge of honour, it's a warning sign.</p>
+                </li>
+                <li class="hidden-truth__item u-flex-row">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='60'%20height='52'%20viewBox='0%200%2060%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.4743%208.50461C43.3895%209.24644%2041.4664%2010.2561%2039.6402%2011.3277C39.4462%2011.4431%2038.6328%2012.0283%2038.525%2011.9747C34.377%207.29708%2027.2285%204.72954%2020.1876%207.54024C9.23042%2011.917%206.56384%2024.6682%209.53748%2033.0302C12.2364%2040.6174%2021.4374%2049.1031%2032.6478%2044.2812C42.4899%2040.0446%2045.6952%2028.4061%2043.3734%2020.5098C44.7309%2019.0262%2046.3308%2017.5466%2048.0924%2016.3309C48.4964%2016.0506%2049.0836%2015.6509%2049.5146%2015.416C49.6923%2015.317%2049.8647%2015.1893%2050.1071%2015.214C50.328%2015.8858%2050.6458%2016.5328%2050.8829%2017.2005C54.072%2026.0323%2052.332%2036.5415%2045.1511%2043.9845C34.5979%2054.9182%2016.9554%2054.572%206.80626%2043.5229C-2.20623%2033.7102%20-2.24933%2018.6553%206.56384%208.76013C16.0073%20-1.83561%2032.8202%20-3.22035%2043.9174%206.81078C44.1275%207.00036%2045.6036%208.38097%2045.4797%208.50461H45.4743Z'%20fill='white'/%3e%3cpath%20d='M45.4364%2016.643C40.3619%2020.7107%2036.9088%2026.1425%2033.1702%2030.9561C31.9904%2032.4727%2029.3885%2036.2767%2027.6377%2037.1298C25.262%2038.2919%2023.4089%2037.3894%2021.9221%2035.8893C20.2359%2034.1872%2018.4097%2031.7598%2017.1169%2029.8557C15.63%2027.6715%2012.1285%2022.2644%2015.3661%2020.3439C19.207%2018.0607%2022.9241%2022.2726%2024.5402%2024.4858C25.0843%2025.2276%2025.5583%2026.3362%2026.1132%2026.9832C26.1778%2027.0574%2026.1024%2027.1234%2026.3394%2027.0821C28.2249%2024.3415%2030.3797%2021.6586%2032.7069%2019.1199C35.0341%2016.5812%2037.5283%2014.1703%2040.8036%2012.2127C44.5961%209.94597%2053.0645%206.33988%2057.902%207.67928C59.5073%208.12438%2059.6582%209.25773%2058.2683%2010.0078C56.7599%2010.8238%2054.5351%2011.4626%2052.8705%2012.1962C50.1177%2013.4078%2047.6289%2014.8915%2045.4418%2016.6471L45.4364%2016.643Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="hidden-truth__icon"
+                    height="38"
+                    width="38"
+                  />
+                  <p>Hard work isn't the problem. Lack of recovery is.</p>
+                </li>
+                <li class="hidden-truth__item u-flex-row">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='60'%20height='52'%20viewBox='0%200%2060%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.4743%208.50461C43.3895%209.24644%2041.4664%2010.2561%2039.6402%2011.3277C39.4462%2011.4431%2038.6328%2012.0283%2038.525%2011.9747C34.377%207.29708%2027.2285%204.72954%2020.1876%207.54024C9.23042%2011.917%206.56384%2024.6682%209.53748%2033.0302C12.2364%2040.6174%2021.4374%2049.1031%2032.6478%2044.2812C42.4899%2040.0446%2045.6952%2028.4061%2043.3734%2020.5098C44.7309%2019.0262%2046.3308%2017.5466%2048.0924%2016.3309C48.4964%2016.0506%2049.0836%2015.6509%2049.5146%2015.416C49.6923%2015.317%2049.8647%2015.1893%2050.1071%2015.214C50.328%2015.8858%2050.6458%2016.5328%2050.8829%2017.2005C54.072%2026.0323%2052.332%2036.5415%2045.1511%2043.9845C34.5979%2054.9182%2016.9554%2054.572%206.80626%2043.5229C-2.20623%2033.7102%20-2.24933%2018.6553%206.56384%208.76013C16.0073%20-1.83561%2032.8202%20-3.22035%2043.9174%206.81078C44.1275%207.00036%2045.6036%208.38097%2045.4797%208.50461H45.4743Z'%20fill='white'/%3e%3cpath%20d='M45.4364%2016.643C40.3619%2020.7107%2036.9088%2026.1425%2033.1702%2030.9561C31.9904%2032.4727%2029.3885%2036.2767%2027.6377%2037.1298C25.262%2038.2919%2023.4089%2037.3894%2021.9221%2035.8893C20.2359%2034.1872%2018.4097%2031.7598%2017.1169%2029.8557C15.63%2027.6715%2012.1285%2022.2644%2015.3661%2020.3439C19.207%2018.0607%2022.9241%2022.2726%2024.5402%2024.4858C25.0843%2025.2276%2025.5583%2026.3362%2026.1132%2026.9832C26.1778%2027.0574%2026.1024%2027.1234%2026.3394%2027.0821C28.2249%2024.3415%2030.3797%2021.6586%2032.7069%2019.1199C35.0341%2016.5812%2037.5283%2014.1703%2040.8036%2012.2127C44.5961%209.94597%2053.0645%206.33988%2057.902%207.67928C59.5073%208.12438%2059.6582%209.25773%2058.2683%2010.0078C56.7599%2010.8238%2054.5351%2011.4626%2052.8705%2012.1962C50.1177%2013.4078%2047.6289%2014.8915%2045.4418%2016.6471L45.4364%2016.643Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="hidden-truth__icon"
+                    height="38"
+                    width="38"
+                  />
+                  <p>
+                    Your body isn't built for constant stress. Burnout doesn't
+                    just harm your health—it sabotages your productivity,
+                    decisions, and long-term success.
+                  </p>
+                </li>
+              </ul>
+              <p class="hidden-truth__details-bottom-text">
+                Most approaches fail because they treat mental and physical
+                stress as separate problems. They're not.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="solution" class="solution">
+        <div class="solution__wrapper l-container u-wrapper">
+          <div data-aos="fade-up">
+            <p class="u-heading-tertial u-section-title">The Solution</p>
+            <h2 class="solution__heading u-heading-secondary">
+              Integrated Resilience Is a Skill. You Can Master It.
+            </h2>
+            <hr class="solution-hr-separator u-hr-separator" />
+            <p class="solution__text">What Makes Calm Hustle Different</p>
+          </div>
+          <div data-aos="fade-up" class="solution__details u-even-column">
+            <img
+              src="/assets/solution-image-CBdZjR-G.png"
+              alt="TOM HISSEY"
+              class="solution__image u-width-100"
+              height="420"
+              width="336"
+            />
+            <ul class="solution__list u-flex-column">
+              <li class="solution__item u-flex-column u-flex-align-center">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='137'%20height='137'%20viewBox='0%200%20137%20137'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='68.5'%20fill='%23D9D9D9'/%3e%3cg%20clip-path='url(%23clip0_60_1584)'%3e%3cpath%20d='M64.4174%2058.2142C71.7798%2057.5662%2086.4259%2057.8581%2090.8276%2064.9291C95.1361%2071.8506%2084.5261%2075.1618%2079.2857%2074.642C72.3103%2073.9441%2067.1201%2071.9361%2059.4494%2072.5128C54.6462%2072.8689%2052.2805%2075.1262%2047.8143%2071.8221C45.4772%2070.0918%2044.7173%2067.8131%2046.4665%2065.2994C49.3484%2061.1551%2059.5282%2058.6486%2064.4174%2058.2213V58.2142Z'%20fill='%23393E46'/%3e%3cpath%20d='M59.1195%2045.5246C64.152%2044.8054%2079.6225%2046.1939%2083.4292%2049.555C86.268%2052.0686%2083.7589%2055.4368%2080.9057%2055.8071C78.5472%2056.1133%2072.8264%2054.2262%2069.9947%2054.5538C67.9874%2055.0024%2065.9228%2054.8671%2063.9011%2055.0807C60.2092%2055.4653%2056.4455%2057.6656%2053.4991%2053.9414C50.4021%2050.0178%2055.2196%2046.0871%2059.1195%2045.5246Z'%20fill='%230092CA'/%3e%3cpath%20d='M67.0555%2035.0568C69.9732%2034.8218%2072.6257%2035.3416%2075.1993%2036.7587C77.1708%2037.8482%2081.4291%2041.7717%2077.6941%2043.438C76.1385%2044.1359%2066.9264%2042.0423%2064.2811%2041.9213C62.0444%2041.8216%2058.883%2043.3241%2058.417%2040.7179C57.7359%2036.8797%2064.2525%2035.2847%2067.0555%2035.0568Z'%20fill='%23EAB818'/%3e%3cpath%20d='M84.7627%20101.267C84.7627%20101.267%2093.0356%2098.8241%2094.0894%2098.0835C95.1433%2097.343%20106.169%2089.3463%2091.2434%2082.261C76.3178%2075.1758%2062.1306%2073.303%2050.3378%2077.1269C38.545%2080.9508%2037.3191%2088.7695%2038.2439%2091.9027C39.1686%2095.0358%2041.4412%2099.6074%2052.1587%20101.259C62.8761%20102.911%2084.7627%20101.259%2084.7627%20101.259V101.267Z'%20fill='%23233D68'/%3e%3c/g%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='54'%20stroke='white'%20stroke-width='5'/%3e%3cdefs%3e%3cclipPath%20id='clip0_60_1584'%3e%3crect%20width='61'%20height='67'%20fill='white'%20transform='translate(38%2035)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt=""
+                  class="solution__icon"
+                  height="116"
+                  width="116"
+                />
+                <div>
+                  <h3 class="solution__title u-heading-tertial">
+                    Mind-Body Integration
+                  </h3>
+                  <p>
+                    Techniques that address both mental patterns and physical
+                    tension simultaneously
+                  </p>
+                </div>
+              </li>
+              <li class="solution__item u-flex-column u-flex-align-center">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='137'%20height='137'%20viewBox='0%200%20137%20137'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='68.5'%20fill='%23D9D9D9'/%3e%3cg%20clip-path='url(%23clip0_60_1584)'%3e%3cpath%20d='M64.4174%2058.2142C71.7798%2057.5662%2086.4259%2057.8581%2090.8276%2064.9291C95.1361%2071.8506%2084.5261%2075.1618%2079.2857%2074.642C72.3103%2073.9441%2067.1201%2071.9361%2059.4494%2072.5128C54.6462%2072.8689%2052.2805%2075.1262%2047.8143%2071.8221C45.4772%2070.0918%2044.7173%2067.8131%2046.4665%2065.2994C49.3484%2061.1551%2059.5282%2058.6486%2064.4174%2058.2213V58.2142Z'%20fill='%23393E46'/%3e%3cpath%20d='M59.1195%2045.5246C64.152%2044.8054%2079.6225%2046.1939%2083.4292%2049.555C86.268%2052.0686%2083.7589%2055.4368%2080.9057%2055.8071C78.5472%2056.1133%2072.8264%2054.2262%2069.9947%2054.5538C67.9874%2055.0024%2065.9228%2054.8671%2063.9011%2055.0807C60.2092%2055.4653%2056.4455%2057.6656%2053.4991%2053.9414C50.4021%2050.0178%2055.2196%2046.0871%2059.1195%2045.5246Z'%20fill='%230092CA'/%3e%3cpath%20d='M67.0555%2035.0568C69.9732%2034.8218%2072.6257%2035.3416%2075.1993%2036.7587C77.1708%2037.8482%2081.4291%2041.7717%2077.6941%2043.438C76.1385%2044.1359%2066.9264%2042.0423%2064.2811%2041.9213C62.0444%2041.8216%2058.883%2043.3241%2058.417%2040.7179C57.7359%2036.8797%2064.2525%2035.2847%2067.0555%2035.0568Z'%20fill='%23EAB818'/%3e%3cpath%20d='M84.7627%20101.267C84.7627%20101.267%2093.0356%2098.8241%2094.0894%2098.0835C95.1433%2097.343%20106.169%2089.3463%2091.2434%2082.261C76.3178%2075.1758%2062.1306%2073.303%2050.3378%2077.1269C38.545%2080.9508%2037.3191%2088.7695%2038.2439%2091.9027C39.1686%2095.0358%2041.4412%2099.6074%2052.1587%20101.259C62.8761%20102.911%2084.7627%20101.259%2084.7627%20101.259V101.267Z'%20fill='%23233D68'/%3e%3c/g%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='54'%20stroke='white'%20stroke-width='5'/%3e%3cdefs%3e%3cclipPath%20id='clip0_60_1584'%3e%3crect%20width='61'%20height='67'%20fill='white'%20transform='translate(38%2035)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt=""
+                  class="solution__icon"
+                  height="116"
+                  width="116"
+                />
+                <div>
+                  <h3 class="solution__title u-heading-tertial">
+                    Mind-Body Integration
+                  </h3>
+                  <p>
+                    Techniques that address both mental patterns and physical
+                    tension simultaneously
+                  </p>
+                </div>
+              </li>
+              <li class="solution__item u-flex-column u-flex-align-center">
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='137'%20height='137'%20viewBox='0%200%20137%20137'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='68.5'%20fill='%23D9D9D9'/%3e%3cg%20clip-path='url(%23clip0_60_1584)'%3e%3cpath%20d='M64.4174%2058.2142C71.7798%2057.5662%2086.4259%2057.8581%2090.8276%2064.9291C95.1361%2071.8506%2084.5261%2075.1618%2079.2857%2074.642C72.3103%2073.9441%2067.1201%2071.9361%2059.4494%2072.5128C54.6462%2072.8689%2052.2805%2075.1262%2047.8143%2071.8221C45.4772%2070.0918%2044.7173%2067.8131%2046.4665%2065.2994C49.3484%2061.1551%2059.5282%2058.6486%2064.4174%2058.2213V58.2142Z'%20fill='%23393E46'/%3e%3cpath%20d='M59.1195%2045.5246C64.152%2044.8054%2079.6225%2046.1939%2083.4292%2049.555C86.268%2052.0686%2083.7589%2055.4368%2080.9057%2055.8071C78.5472%2056.1133%2072.8264%2054.2262%2069.9947%2054.5538C67.9874%2055.0024%2065.9228%2054.8671%2063.9011%2055.0807C60.2092%2055.4653%2056.4455%2057.6656%2053.4991%2053.9414C50.4021%2050.0178%2055.2196%2046.0871%2059.1195%2045.5246Z'%20fill='%230092CA'/%3e%3cpath%20d='M67.0555%2035.0568C69.9732%2034.8218%2072.6257%2035.3416%2075.1993%2036.7587C77.1708%2037.8482%2081.4291%2041.7717%2077.6941%2043.438C76.1385%2044.1359%2066.9264%2042.0423%2064.2811%2041.9213C62.0444%2041.8216%2058.883%2043.3241%2058.417%2040.7179C57.7359%2036.8797%2064.2525%2035.2847%2067.0555%2035.0568Z'%20fill='%23EAB818'/%3e%3cpath%20d='M84.7627%20101.267C84.7627%20101.267%2093.0356%2098.8241%2094.0894%2098.0835C95.1433%2097.343%20106.169%2089.3463%2091.2434%2082.261C76.3178%2075.1758%2062.1306%2073.303%2050.3378%2077.1269C38.545%2080.9508%2037.3191%2088.7695%2038.2439%2091.9027C39.1686%2095.0358%2041.4412%2099.6074%2052.1587%20101.259C62.8761%20102.911%2084.7627%20101.259%2084.7627%20101.259V101.267Z'%20fill='%23233D68'/%3e%3c/g%3e%3ccircle%20cx='68.5'%20cy='68.5'%20r='54'%20stroke='white'%20stroke-width='5'/%3e%3cdefs%3e%3cclipPath%20id='clip0_60_1584'%3e%3crect%20width='61'%20height='67'%20fill='white'%20transform='translate(38%2035)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt=""
+                  class="solution__icon"
+                  height="116"
+                  width="116"
+                />
+                <div>
+                  <h3 class="solution__title u-heading-tertial">
+                    Mind-Body Integration
+                  </h3>
+                  <p>
+                    Techniques that address both mental patterns and physical
+                    tension simultaneously
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="l-container about__wrapper u-wrapper">
+          <div class="about__bio u-even-column">
+            <div class="about__bio-col-1" data-aos="fade-right">
+              <p class="about__title u-section-title">MEET TOM HISSEY</p>
+              <h2 class="about__heading u-heading-secondary">
+                The Mind Behind Calm Hustle
+              </h2>
+              <div class="about__quote u-card">
+                <img
+                  src="/assets/about-quote-image-31W2TCD3.png"
+                  alt=""
+                  class="about__quote-image u-width-100"
+                  height="348"
+                  width="315"
+                />
+                <div class="about__quote-content u-flex-column">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='38'%20height='32'%20viewBox='0%200%2038%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.5%2016.1C12.9667%2016.7%2014.1%2017.6667%2014.9%2019C15.7667%2020.2667%2016.2%2021.8%2016.2%2023.6C16.2%2026%2015.4333%2027.9667%2013.9%2029.5C12.3667%2031.0333%2010.4667%2031.8%208.2%2031.8C5.8%2031.8%203.83333%2031.0333%202.3%2029.5C0.766667%2027.9667%202.83122e-07%2026%202.83122e-07%2023.6C2.83122e-07%2022.4%200.133334%2021.2333%200.4%2020.1C0.733334%2018.9667%201.33333%2017.2667%202.2%2015L7.5%200.799996H15.5L11.5%2016.1ZM32.7%2016.1C34.1667%2016.7%2035.3%2017.6667%2036.1%2019C36.9667%2020.2667%2037.4%2021.8%2037.4%2023.6C37.4%2026%2036.6333%2027.9667%2035.1%2029.5C33.5667%2031.0333%2031.6667%2031.8%2029.4%2031.8C27%2031.8%2025.0333%2031.0333%2023.5%2029.5C21.9667%2027.9667%2021.2%2026%2021.2%2023.6C21.2%2022.4%2021.3333%2021.2333%2021.6%2020.1C21.9333%2018.9667%2022.5333%2017.2667%2023.4%2015L28.7%200.799996H36.7L32.7%2016.1Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="about__quote-icon"
+                    height="46"
+                    width="40"
+                  />
+                  <p class="about__quote-text">
+                    You don't need to lower your ambitions. You need integrated
+                    recovery systems.
+                  </p>
+                  <p class="about__quote-by">-Tom Hissey</p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="about__bio-col-2 u-flex-column">
+              <p class="about__bio-text">
+                I'm not a wellness guru. I'm a former soldier, qualified
+                physiotherapist, property developer, and neuroscience enthusiast
+                who understands high performance from the inside out.
+              </p>
+              <p class="about__bio-text">
+                I'm not a wellness guru. I'm a former soldier, qualified
+                physiotherapist, property developer, and neuroscience enthusiast
+                who understands high performance from the inside out.
+              </p>
+              <p class="about__bio-text">Late-night development meetings.</p>
+              <p class="about__bio-text about__bio-text--callout">
+                I needed an integrated system that addressed both mind and body.
+              </p>
+              <p class="about__bio-text">So I built one</p>
+              <p class="about__bio-text">
+                Calm Hustle combines military resilience, physiotherapy
+                expertise, and neuroscience to create sustainable high
+                performance—helping ambitious professionals recover better,
+                stress less, and achieve with clarity.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="about__skills u-even-column"
+            data-oasis="fade-up"
+          >
+            <div class="about__skill u-flex-column u-flex-align-center">
+              <img
+                src="/assets/about-icon-military-CoIRRBL5.png"
+                alt="Military-Trained Resilience"
+                class="about__skill-icon"
+                height="133"
+                width="133"
+              />
+              <h3 class="about__skill-title u-heading-tertial">
+                Military-Trained Resilience
+              </h3>
+              <p class="about__skill-description">
+                Mental clarity techniques that work under genuine pressure, not
+                just everyday stress
+              </p>
+            </div>
+            <div class="about__skill u-flex-column u-flex-align-center">
+              <img
+                src="/assets/about-icon-physiotherapy-gDdkMqLW.png"
+                alt="Physiotherapy Expertise"
+                class="about__skill-icon"
+                height="133"
+                width="133"
+              />
+              <h3 class="about__skill-title u-heading-tertial">
+                Physiotherapy Expertise
+              </h3>
+              <p class="about__skill-description">
+                The ability to identify and release physical tension patterns
+                others miss
+              </p>
+            </div>
+            <div class="about__skill u-flex-column u-flex-align-center">
+              <img
+                src="/assets/about-icon-mindset-BPMXtayt.png"
+                alt="Achievement Mindset"
+                class="about__skill-icon"
+                height="133"
+                width="133"
+              />
+              <h3 class="about__skill-title u-heading-tertial">
+                Achievement Mindset
+              </h3>
+              <p class="about__skill-description">
+                As a property developer and business director, I understand the
+                drive to build and achieve
+              </p>
+            </div>
+            <div class="about__skill u-flex-column u-flex-align-center">
+              <img
+                src="/assets/about-icon-testing-Cn9X1x7n.png"
+                alt="Integrated Testing"
+                class="about__skill-icon"
+                height="133"
+                width="133"
+              />
+              <h3 class="about__skill-title u-heading-tertial">
+                Integrated Testing
+              </h3>
+              <p class="about__skill-description">
+                Years of refining what actually works for sustainable
+                performance
+              </p>
+            </div>
+          </div>
+
+          <div class="about__info u-even-column">
+            <picture data-aos="fade-right" class="about__info-image-wrapper">
+              <source
+                srcset="/assets/about-image-desktop-BSDuPSib.png"
+                type="image/png"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="/assets/about-image-mobile-DjiZQxAT.png"
+                type="image/png"
+                media="(max-width:768px)"
+              />
+              <img
+                src="/src/assets/images/about-image.png"
+                alt="Tom Hissey"
+                class="about__info-image u-width-100"
+                height="334"
+                width="336"
+              />
+            </picture>
+            <div data-aos="fade-left" class="about__info-content u-flex-column">
+              <p class="about__info-callout">
+                This isn't therapy. It's not generic wellness.
+              </p>
+              <p>
+                It's a precision-engineered approach for professionals who want
+                to achieve more—without sacrificing their physical and mental
+                wellbeing.
+              </p>
+              <p class="about__info-quote">
+                "Calm isn't the opposite of hustle—it's what makes hustle
+                sustainable."
+              </p>
+              <p>
+                Most high-achievers accept stress as inevitable. I've proven
+                it's optional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="services__wrapper l-container u-wrapper">
+          <div data-aos="fade-up">
+            <p class="services__title u-section-title">
+              Your Integrated Performance System
+            </p>
+            <h2 class="services__heading u-heading-secondary">
+              High-Performance Stress Management for Real-World Results
+            </h2>
+            <hr class="services__separator u-hr-separator" />
+          </div>
+          <div class="services__catalogue u-flex-column" data-aos="fade-up">
+            <article class="services__item u-card u-flow">
+              <img
+                src="/assets/services-management-hp-_iNce6QF.png"
+                alt="High-Performance Stress Management"
+                class="services__image u-width-100"
+                height="388"
+                width="583"
+              />
+              <h3 class="services__item-title u-heading-tertial">
+                High-Performance Stress Management
+              </h3>
+              <p class="services__item-description">
+                Reprogram your stress response with personalized guidance
+                targeting both mental patterns and physical tension. Discover
+                how your body's signals can become performance allies instead of
+                obstacles.
+              </p>
+            </article>
+            <article class="services__item u-card u-flow">
+              <img
+                src="/assets/services-management-workshop-DN_QpiDD.png"
+                alt="Team Resilience Workshops"
+                class="services__image u-width-100"
+                height="388"
+                width="583"
+              />
+              <h3 class="services__item-title u-heading-tertial">
+                Team Resilience Workshops
+              </h3>
+              <p class="services__item-description">
+                Give your team the physical and mental tools to perform under
+                pressure. Practical techniques that transfer directly to
+                high-stakes business environments.
+              </p>
+            </article>
+            <article class="services__item u-card u-flow">
+              <img
+                src="/assets/services-management-burnout-OZDcuzOW.png"
+                alt="Burnout Recovery Intensive"
+                class="services__image u-width-100"
+                height="388"
+                width="583"
+              />
+              <h3 class="services__item-title u-heading-tertial">
+                Burnout Recovery Intensive
+              </h3>
+              <p class="services__item-description">
+                A comprehensive reset for professionals in the danger
+                zone—combining targeted physical release techniques with mental
+                pattern interruption for sustainable recovery.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="ebook">
+        <div class="l-container">
+          <div class="ebook__wrapper u-even-column u-wrapper">
+            <img
+              src="/assets/e-book--Ulthg4o.png"
+              alt="10-Minute Stress Hacks Guide Book"
+              class="ebook__image u-width-100"
+              height="214"
+              width="330"
+              data-aos="fade-right"
+            />
+            <div data-aos="fade-left" class="ebook__content u-flex-column">
+              <div class="ebook__content-header">
+                <p class="ebook__title u-section-title">
+                  Download the Free 10-Minute Stress Hacks Guide
+                </p>
+                <h2 class="ebook__heading u-heading-secondary">
+                  Fast-Track Your Stress Relief—in Just 10 Minutes a Day.
+                </h2>
+                <hr class="ebook__separator u-hr-separator" />
+              </div>
+              <p class="ebook__text">
+                Download the 10-Minute Stress Hacks Workbook—your practical
+                guide to managing stress, boosting productivity, and avoiding
+                burnout with science-backed techniques you can apply daily.
+              </p>
+              <ul class="ebook__benefits u-flex-column">
+                <li class="ebook__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="ebook__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Integrated daily practices</strong>that address both
+                    mind and body
+                  </p>
+                </li>
+                <li class="ebook__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="ebook__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Physiotherapy-informed techniques</strong> to
+                    release physical tension
+                  </p>
+                </li>
+                <li class="ebook__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="ebook__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Military-inspired</strong> mental resilience
+                    exercises
+                  </p>
+                </li>
+                <li class="ebook__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="ebook__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Progressive system</strong> that builds sustainable
+                    habits, not quick fixes
+                  </p>
+                </li>
+              </ul>
+              <a href="#download-guide" class="ebook__button button button--lg">
+                <span class="button__text">Download Now</span>
+                <span class="button__icon">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='48'%20height='48'%20rx='24'%20fill='%23EAB818'/%3e%3cpath%20d='M17%2024H31'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2017L31%2024L24%2031'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="book-call">
+        <div class="l-container">
+          <div class="book-call__wrapper u-wrapper u-even-column">
+            <div data-aos="fade-up" class="book-call__content u-flex-column">
+              <div class="book-call__content-header">
+                <p class="book-call__title u-section-title">
+                  Transform Your Performance Potential
+                </p>
+                <h2 class="book-call__heading u-heading-secondary">
+                  High Achievement Without the Burnout
+                </h2>
+                <hr class="book-call__separator u-hr-separator" />
+              </div>
+              <p class="book-call__text">
+                Most professionals accept diminished well-being as the price of
+                success. Calm Hustle proves otherwise—showing that integrated
+                mind-body resilience isn't just healthier, it's a strategic
+                advantage.
+              </p>
+              <p class="book-call__text">
+                Let's build the complete system that helps you perform at your
+                peak and recover effectively—no matter what pressures you face.
+              </p>
+              <p class="book-call__text">
+                Start by booking a 15-minute Performance Strategy Call with Tom,
+                where you'll:
+              </p>
+              <ul class="book-call__benefits u-flex-column">
+                <li class="book-call__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="book-call__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>Identify your specific mind-body stress patterns</p>
+                </li>
+                <li class="book-call__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="book-call__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>Receive at least one immediate implementation strategy</p>
+                </li>
+                <li class="book-call__benefits-item u-flex-group">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAMySURBVEhLtZbvS5NRFMfPc7c5XajPNn81kzKj7Aeo0LRZmEJCoUSk1LvqRfU2wT+gIt8EBfm2IoogSFR8Ef0GndAspTQwUTDSNAVT90s357Mf3XO9m5t7NnXm581z7rnsfJ97znPPmRAIBGC7iSvil+zi8szbc5K156Q0b6nEdcDrEHFPmXp4QJl2ZEClNZmTcy8+ZT+IgawIBlv6/fiGa+xhQzBoPBQpeWMopClovM1dEUSJ+NwTe+x9dZ345K4Ng2LpxrYqfHIXI0LE6xwstvXWdW7k7WOiTLeJxtYqFU0l96yK4JtbLaf6tyQQhArpyj+UBE9EmJOCKfovAojXLmI8rC0umYjr5/2bidQgHhjPPf6oAW2Wrvnu0l+JipgHtdDekwNLXg00X/0OySov36HQtOkrvuSTpT8vryQq4PIQeGE2wJxTBaaDzkgBhKYN7xnBi8Zdm8Y8qINFjwIIIXCmeIJ7I8H4xOcYLObrTeH1CfCuP4PZpkI7ZItuZq8FOwWRnD8SErEMizDrSAJBEKC2dI57o/FJDjH0Ca/FIxEYntwBs3YV96zi9wu02NnMNu53QZ7OwWxZaF2IoEyz8WUI64ISGp8UQlNLAdxt3wsBGjSc7iFt6BT1pinujQ0hqvQoEbUqAJJ3JfC0VQ2vv63kHsEG0fE5i9nlh9xg0C0yOxbYrYlSe8zM1yE0ah+cLZvhK4BXfZmw4FYw+/1ABjuFQqGA82XjzBcPHAckSXe8i68jqDn6F3L1HmY73UpopTXA+/DmaybzVZc46Re1sh8PJZ03gn/ZJs7RGy/Xt0Zo4e/QugTZt9MFo9Ma0KdK0HRpElLVTr4jD6ENUl/Rm08EWpOU3deauT+CA7sWoda4mjYUwIt3vca1rgCSbLjwDJ+sdwVot7T2VPfLtRd/QIDnXQawjORAVroH6k/YoShP/naHEzwF2ts0T9LoPPkYPU/QIZa2Vcndm01Bf6+lccJHcMT4RfBEic54TJG43owPZ3H03i3PVMvlDYnRt9fQj4d+QA/kLndMkSBuOm+k+U+VPudQkTfYTGlQBQ2m0pV34f+upKzTHXLBg6wrsnUA/gG6H4OP+Sj4sgAAAABJRU5ErkJggg=="
+                    alt=""
+                    class="ebook__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    Discover if the complete Calm Hustle system is right for you
+                  </p>
+                </li>
+              </ul>
+              <div class="book-call__cta-group">
+                <a
+                  href="#book-call"
+                  class="book-call__button book-call__button--strategy button button--sm"
+                >
+                  <span class="button__text"
+                    >Book Your Free 15-Min Performance Strategy Call</span
+                  >
+                  <span class="button__icon">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='48'%20height='48'%20rx='24'%20fill='%23EAB818'/%3e%3cpath%20d='M17%2024H31'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2017L31%2024L24%2031'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </span>
+                </a>
+                <a
+                  href="#book-call"
+                  class="book-call__button button button--sm"
+                >
+                  <span class="button__text"
+                    >Download the Free 10-Minute Stress Hacks Guide</span
+                  >
+                  <span class="button__icon">
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='48'%20height='48'%20rx='24'%20fill='%23EAB818'/%3e%3cpath%20d='M17%2024H31'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2017L31%2024L24%2031'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <picture data-aos="fade-left" class="book-call__image-wrapper">
+              <source
+                srcset="/assets/book-call-desktop-P04ZESmG.png"
+                type="image/png"
+                media="(min-width:992px)"
+              />
+              <source
+                srcset="/assets/book-call-mobile-Cy8sgRQR.png"
+                type="image/png"
+                media="(max-width:992px)"
+              />
+              <img
+                src="/src/assets/images/book-call-image.png"
+                alt="Tom Hissey pointing at Call Booking button"
+                class="book-call__image u-width-100"
+                height="214"
+                width="330"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section id="bulletin" class="bulletin">
+        <div class="l-container">
+          <div
+            data-aos="fade-up"
+            class="bulletin__wrapper u-even-column u-wrapper"
+          >
+            <div class="bulletin__image-wrapper">
+              <img
+                src="/assets/bulletin-image-CGFrhPJU.png"
+                alt="10-Minute Stress Hacks Guide Book"
+                class="bulletin__image u-width-100"
+                height="304"
+                width="334"
+              />
+              <img
+                src="/assets/bulletin-avatar-duyb0Vzn.png"
+                alt="10-Minute Stress Hacks Guide Book"
+                class="bulletin__avatar"
+                height="120"
+                width="120"
+              />
+            </div>
+            <div class="bulletin__header">
+              <h2 class="bulletin__heading u-heading-secondary">
+                The Calm Hustle Performance Bulletin
+              </h2>
+              <hr class="bulletin__separator u-hr-separator" />
+              <p class="bulletin__title u-section-title">
+                Not just another wellness newsletter.
+              </p>
+            </div>
+            <div class="bulletin__content u-flex-column">
+              <p class="bulletin__notice">Every month, you'll get:</p>
+              <ul class="bulletin__benefits u-flex-column">
+                <li class="bulletin__benefits-item u-flex-group">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='35'%20height='30'%20viewBox='0%200%2035%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.2352%204.90651C25.0324%205.33448%2023.9229%205.91701%2022.8693%206.53519C22.7574%206.60177%2022.2881%206.93939%2022.226%206.90848C19.8329%204.20986%2015.7087%202.72858%2011.6467%204.35014C5.32524%206.8752%203.78683%2014.2316%205.50239%2019.0559C7.05945%2023.4331%2012.3677%2028.3287%2018.8353%2025.5468C24.5134%2023.1026%2026.3626%2016.3882%2025.0231%2011.8326C25.8063%2010.9766%2026.7293%2010.1231%2027.7456%209.42166C27.9787%209.25998%2028.3175%209.02934%2028.5661%208.89382C28.6687%208.83675%2028.7681%208.76305%2028.908%208.77731C29.0354%209.16487%2029.2188%209.53816%2029.3555%209.92334C31.1954%2015.0186%2030.1915%2021.0816%2026.0487%2025.3757C19.9603%2031.6836%209.78197%2031.4838%203.92669%2025.1094C-1.27282%2019.4482%20-1.29769%2010.7626%203.78683%205.05392C9.23497%20-1.05901%2018.9347%20-1.85789%2025.337%203.92929C25.4582%204.03867%2026.3098%204.83518%2026.2383%204.90651H26.2352Z'%20fill='%23233D68'/%3e%3cpath%20d='M26.2134%209.60145C23.2858%2011.9482%2021.2936%2015.0819%2019.1367%2017.859C18.4561%2018.734%2016.955%2020.9286%2015.9449%2021.4207C14.5743%2022.0912%2013.5052%2021.5705%2012.6474%2020.7051C11.6747%2019.7231%2010.6211%2018.3227%209.87518%2017.2242C9.0174%2015.964%206.99727%2012.8446%208.86511%2011.7366C11.081%2010.4194%2013.2255%2012.8493%2014.1579%2014.1261C14.4718%2014.5541%2014.7453%2015.1937%2015.0654%2015.567C15.1027%2015.6098%2015.0592%2015.6478%2015.1959%2015.624C16.2837%2014.0429%2017.5268%2012.495%2018.8694%2011.0304C20.212%209.56579%2021.651%208.17487%2023.5406%207.04549C25.7286%205.73778%2030.6142%203.65734%2033.4051%204.43007C34.3312%204.68686%2034.4182%205.34071%2033.6164%205.77345C32.7462%206.24422%2031.4626%206.61275%2030.5023%207.03597C28.9142%207.735%2027.4783%208.59095%2026.2165%209.60383L26.2134%209.60145Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="bulletin__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>One mind-body technique</strong> you can implement
+                    immediately
+                  </p>
+                </li>
+                <li class="bulletin__benefits-item u-flex-group">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='35'%20height='30'%20viewBox='0%200%2035%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.2352%204.90651C25.0324%205.33448%2023.9229%205.91701%2022.8693%206.53519C22.7574%206.60177%2022.2881%206.93939%2022.226%206.90848C19.8329%204.20986%2015.7087%202.72858%2011.6467%204.35014C5.32524%206.8752%203.78683%2014.2316%205.50239%2019.0559C7.05945%2023.4331%2012.3677%2028.3287%2018.8353%2025.5468C24.5134%2023.1026%2026.3626%2016.3882%2025.0231%2011.8326C25.8063%2010.9766%2026.7293%2010.1231%2027.7456%209.42166C27.9787%209.25998%2028.3175%209.02934%2028.5661%208.89382C28.6687%208.83675%2028.7681%208.76305%2028.908%208.77731C29.0354%209.16487%2029.2188%209.53816%2029.3555%209.92334C31.1954%2015.0186%2030.1915%2021.0816%2026.0487%2025.3757C19.9603%2031.6836%209.78197%2031.4838%203.92669%2025.1094C-1.27282%2019.4482%20-1.29769%2010.7626%203.78683%205.05392C9.23497%20-1.05901%2018.9347%20-1.85789%2025.337%203.92929C25.4582%204.03867%2026.3098%204.83518%2026.2383%204.90651H26.2352Z'%20fill='%23233D68'/%3e%3cpath%20d='M26.2134%209.60145C23.2858%2011.9482%2021.2936%2015.0819%2019.1367%2017.859C18.4561%2018.734%2016.955%2020.9286%2015.9449%2021.4207C14.5743%2022.0912%2013.5052%2021.5705%2012.6474%2020.7051C11.6747%2019.7231%2010.6211%2018.3227%209.87518%2017.2242C9.0174%2015.964%206.99727%2012.8446%208.86511%2011.7366C11.081%2010.4194%2013.2255%2012.8493%2014.1579%2014.1261C14.4718%2014.5541%2014.7453%2015.1937%2015.0654%2015.567C15.1027%2015.6098%2015.0592%2015.6478%2015.1959%2015.624C16.2837%2014.0429%2017.5268%2012.495%2018.8694%2011.0304C20.212%209.56579%2021.651%208.17487%2023.5406%207.04549C25.7286%205.73778%2030.6142%203.65734%2033.4051%204.43007C34.3312%204.68686%2034.4182%205.34071%2033.6164%205.77345C32.7462%206.24422%2031.4626%206.61275%2030.5023%207.03597C28.9142%207.735%2027.4783%208.59095%2026.2165%209.60383L26.2134%209.60145Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="bulletin__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Performance insights</strong> from military,
+                    physiotherapy, and neuroscience
+                  </p>
+                </li>
+                <li class="bulletin__benefits-item u-flex-group">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='35'%20height='30'%20viewBox='0%200%2035%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.2352%204.90651C25.0324%205.33448%2023.9229%205.91701%2022.8693%206.53519C22.7574%206.60177%2022.2881%206.93939%2022.226%206.90848C19.8329%204.20986%2015.7087%202.72858%2011.6467%204.35014C5.32524%206.8752%203.78683%2014.2316%205.50239%2019.0559C7.05945%2023.4331%2012.3677%2028.3287%2018.8353%2025.5468C24.5134%2023.1026%2026.3626%2016.3882%2025.0231%2011.8326C25.8063%2010.9766%2026.7293%2010.1231%2027.7456%209.42166C27.9787%209.25998%2028.3175%209.02934%2028.5661%208.89382C28.6687%208.83675%2028.7681%208.76305%2028.908%208.77731C29.0354%209.16487%2029.2188%209.53816%2029.3555%209.92334C31.1954%2015.0186%2030.1915%2021.0816%2026.0487%2025.3757C19.9603%2031.6836%209.78197%2031.4838%203.92669%2025.1094C-1.27282%2019.4482%20-1.29769%2010.7626%203.78683%205.05392C9.23497%20-1.05901%2018.9347%20-1.85789%2025.337%203.92929C25.4582%204.03867%2026.3098%204.83518%2026.2383%204.90651H26.2352Z'%20fill='%23233D68'/%3e%3cpath%20d='M26.2134%209.60145C23.2858%2011.9482%2021.2936%2015.0819%2019.1367%2017.859C18.4561%2018.734%2016.955%2020.9286%2015.9449%2021.4207C14.5743%2022.0912%2013.5052%2021.5705%2012.6474%2020.7051C11.6747%2019.7231%2010.6211%2018.3227%209.87518%2017.2242C9.0174%2015.964%206.99727%2012.8446%208.86511%2011.7366C11.081%2010.4194%2013.2255%2012.8493%2014.1579%2014.1261C14.4718%2014.5541%2014.7453%2015.1937%2015.0654%2015.567C15.1027%2015.6098%2015.0592%2015.6478%2015.1959%2015.624C16.2837%2014.0429%2017.5268%2012.495%2018.8694%2011.0304C20.212%209.56579%2021.651%208.17487%2023.5406%207.04549C25.7286%205.73778%2030.6142%203.65734%2033.4051%204.43007C34.3312%204.68686%2034.4182%205.34071%2033.6164%205.77345C32.7462%206.24422%2031.4626%206.61275%2030.5023%207.03597C28.9142%207.735%2027.4783%208.59095%2026.2165%209.60383L26.2134%209.60145Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="bulletin__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Early access</strong> to new resources, challenges &
+                    workshops
+                  </p>
+                </li>
+                <li class="bulletin__benefits-item u-flex-group">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='35'%20height='30'%20viewBox='0%200%2035%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.2352%204.90651C25.0324%205.33448%2023.9229%205.91701%2022.8693%206.53519C22.7574%206.60177%2022.2881%206.93939%2022.226%206.90848C19.8329%204.20986%2015.7087%202.72858%2011.6467%204.35014C5.32524%206.8752%203.78683%2014.2316%205.50239%2019.0559C7.05945%2023.4331%2012.3677%2028.3287%2018.8353%2025.5468C24.5134%2023.1026%2026.3626%2016.3882%2025.0231%2011.8326C25.8063%2010.9766%2026.7293%2010.1231%2027.7456%209.42166C27.9787%209.25998%2028.3175%209.02934%2028.5661%208.89382C28.6687%208.83675%2028.7681%208.76305%2028.908%208.77731C29.0354%209.16487%2029.2188%209.53816%2029.3555%209.92334C31.1954%2015.0186%2030.1915%2021.0816%2026.0487%2025.3757C19.9603%2031.6836%209.78197%2031.4838%203.92669%2025.1094C-1.27282%2019.4482%20-1.29769%2010.7626%203.78683%205.05392C9.23497%20-1.05901%2018.9347%20-1.85789%2025.337%203.92929C25.4582%204.03867%2026.3098%204.83518%2026.2383%204.90651H26.2352Z'%20fill='%23233D68'/%3e%3cpath%20d='M26.2134%209.60145C23.2858%2011.9482%2021.2936%2015.0819%2019.1367%2017.859C18.4561%2018.734%2016.955%2020.9286%2015.9449%2021.4207C14.5743%2022.0912%2013.5052%2021.5705%2012.6474%2020.7051C11.6747%2019.7231%2010.6211%2018.3227%209.87518%2017.2242C9.0174%2015.964%206.99727%2012.8446%208.86511%2011.7366C11.081%2010.4194%2013.2255%2012.8493%2014.1579%2014.1261C14.4718%2014.5541%2014.7453%2015.1937%2015.0654%2015.567C15.1027%2015.6098%2015.0592%2015.6478%2015.1959%2015.624C16.2837%2014.0429%2017.5268%2012.495%2018.8694%2011.0304C20.212%209.56579%2021.651%208.17487%2023.5406%207.04549C25.7286%205.73778%2030.6142%203.65734%2033.4051%204.43007C34.3312%204.68686%2034.4182%205.34071%2033.6164%205.77345C32.7462%206.24422%2031.4626%206.61275%2030.5023%207.03597C28.9142%207.735%2027.4783%208.59095%2026.2165%209.60383L26.2134%209.60145Z'%20fill='%23EAB818'/%3e%3c/svg%3e"
+                    alt=""
+                    class="bulletin__icon"
+                    height="41"
+                    width="25"
+                  />
+                  <p>
+                    <strong>Real-world case studies</strong> of high performers
+                    who've transformed their resilience
+                  </p>
+                </li>
+              </ul>
+              <p class="bulletin__text">
+                If you're serious about sustainable achievement—this is your
+                monthly edge.
+              </p>
+              <a
+                href="#download-guide"
+                class="bulletin__button button button--sm"
+              >
+                <span class="button__text"
+                  >Join the Calm Hustle Monthly Newsletter</span
+                >
+                <span class="button__icon">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='48'%20height='48'%20rx='24'%20fill='%23EAB818'/%3e%3cpath%20d='M17%2024H31'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2017L31%2024L24%2031'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="l-container">
+        <div
+          data-aos="fade-in"
+          class="footer__wrapper u-wrapper u-flex-column u-flex-align-center"
+        >
+          <picture class="footer__logo-wrapper">
+            <source
+              srcset="/assets/footer-logo-desktop-B987ESNE.png"
+              type="image/png"
+              media="(min-width:992px)"
+            />
+            <source
+              srcset="/assets/footer-logo-mobile-B-QbYz5x.png"
+              type="image/png"
+              media="(max-width:992px)"
+            />
+            <img
+              src="/assets/footer-logo-mobile-B-QbYz5x.png"
+              alt=""
+              class="footer__brand"
+              height="115"
+              width="113"
+            />
+          </picture>
+          <p class="footer__text">
+            Integrated Mind-Body Resilience for Ambitious Professionals
+          </p>
+          <nav class="footer__nav u-flex-column" aria-label="Secondary">
+            <ul class="footer__nav-menu u-flex-column">
+              <li><a href="#solution" class="footer__nav-link">Solution</a></li>
+              <li><a href="#about" class="footer__nav-link">About</a></li>
+              <li><a href="#services" class="footer__nav-link">Services</a></li>
+              <li><a href="#bulletin" class="footer__nav-link">Bulletin</a></li>
+              <li>
+                <a href="#contact" class="footer__nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copy">Copyright © 2025 Calm Hustle.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Js scripts  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>
